@@ -485,7 +485,7 @@ Respond ONLY with a valid JSON object in this exact format (no markdown, no extr
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }]
       }),
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.timeout(60000),
     });
 
     if (!res.ok) {
