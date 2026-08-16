@@ -1,51 +1,54 @@
 /**
- * popup.js — Code Mentor AI Chrome Extension Frontend
+ * popup.js — AlgoPush Chrome Extension
  *
- * Communicates exclusively with the local backend (no direct Gemini calls).
- * Tracks hint history client-side and sends previousHints to the backend.
+ * BYOK architecture: calls Google Gemini REST API directly from the extension.
+ * API key is sent via the x-goog-api-key header. No OAuth or Authorization
+ * headers are used.
+ * No local backend server required. API key stored in chrome.storage.local.
  */
 
-const API_BASE_URL = "http://localhost:3001/api";
+// ── Gemini REST API ──
+const GEMINI_MODEL = "gemini-3.5-flash";
+const GEMINI_URL   = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
-let DEVICE_ID = "";
-let currentProblem = null;
-let selectedLevel = 1;
+// ── State ──
+let currentProblem  = null;
+let selectedLevel   = 1;
 let completedLevels = new Set();
-// Client-side hint storage: previousHints[level] = "hint text"
-let sessionHints = {};
+let sessionHints    = {};
+
+// ── Removed SVG Logos ──
 
 // ── DOM Refs ──
 const $ = (id) => document.getElementById(id);
-const problemCard = $("problem-card");
-const noProblem = $("no-problem");
-const problemTitle = $("problem-title-text");
-const problemDesc = $("problem-desc");
+const problemCard     = $("problem-card");
+const noProblem       = $("no-problem");
+const problemTitle    = $("problem-title-text");
+const problemDesc     = $("problem-desc");
 const problemPlatform = $("problem-platform");
-const levelBadges = $("level-badges");
-const actionBtns = $("action-btns");
-const getHintBtn = $("get-hint-btn");
-const nextHintBtn = $("next-hint-btn");
-const similarBtn = $("similar-btn");
-const loader = $("loader");
-const loaderText = $("loader-text");
-const outputBox = $("output-box");
-const outputText = $("output-text");
-const outputTag = $("output-tag");
-const copyBtn = $("copy-btn");
-const errorBox = $("error-box");
-const errorTitle = $("error-title");
-const errorMessage = $("error-message");
-const similarEmpty = $("similar-empty");
-const requestCounter = $("request-counter");
-const statusDot = $("status-dot");
-const apiKeyInput = $("api-key-input");
-const saveKeyBtn = $("save-key-btn");
-const keyStatus = $("key-status");
-const deviceIdDisp = $("device-id-display");
-const serverStatusIcon = $("server-status-icon");
-const serverStatusText = $("server-status-text");
+const levelBadges     = $("level-badges");
+const actionBtns      = $("action-btns");
+const getHintBtn      = $("get-hint-btn");
+const nextHintBtn     = $("next-hint-btn");
+const similarBtn      = $("similar-btn");
+const loader          = $("loader");
+const loaderText      = $("loader-text");
+const outputBox       = $("output-box");
+const outputText      = $("output-text");
+const outputTag       = $("output-tag");
+const copyBtn         = $("copy-btn");
+const errorBox        = $("error-box");
+const errorTitle      = $("error-title");
+const errorMessage    = $("error-message");
+const similarEmpty    = $("similar-empty");
+const requestCounter  = $("request-counter");
+const statusDot       = $("status-dot");
+const apiKeyInput     = $("api-key-input");
+const saveKeyBtn      = $("save-key-btn");
+const keyStatus       = $("key-status");
 const historyContainer = $("history-container");
-const historyEmpty = $("history-empty");
+const historyEmpty    = $("history-empty");
+const apiConnStatus   = $("api-conn-status");
 
 // ── Utilities ──
 function showLoader(msg = "Thinking…") {
@@ -85,30 +88,17 @@ function showError(title, message) {
   if (errorBox) errorBox.style.display = "flex";
 }
 
-function updateRequestCounter(count) {
-  if (requestCounter && count !== undefined) {
-    requestCounter.textContent = `${count} AI requests today`;
-    requestCounter.style.display = "block";
-  }
-}
-
 function updateLevelBadges() {
   document.querySelectorAll(".level-badge").forEach((badge) => {
     const level = parseInt(badge.dataset.level);
     badge.classList.remove("active", "completed");
-    if (completedLevels.has(level)) {
-      badge.classList.add("completed");
-    }
-    if (level === selectedLevel) {
-      badge.classList.add("active");
-    }
+    if (completedLevels.has(level)) badge.classList.add("completed");
+    if (level === selectedLevel) badge.classList.add("active");
   });
 }
 
 function renderMarkdown(text) {
-  if (typeof marked !== "undefined") {
-    return marked.parse(text);
-  }
+  if (typeof marked !== "undefined") return marked.parse(text);
   return text.replace(/\n/g, "<br>");
 }
 
@@ -121,42 +111,68 @@ function setOutput(html, tag) {
   hideLoader();
 }
 
-/**
- * Build previousHints array from sessionHints for levels < current.
- */
 function getPreviousHints(currentLevel) {
   const hints = [];
   for (let i = 1; i < currentLevel; i++) {
-    if (sessionHints[i]) {
-      hints.push(sessionHints[i]);
-    }
+    if (sessionHints[i]) hints.push(sessionHints[i]);
   }
   return hints;
 }
 
 // ── Storage Helpers ──
-function getDeviceId() {
-  return new Promise((resolve) => {
-    chrome.storage.local.get("dsa_device_id", (data) => {
-      if (data.dsa_device_id) {
-        resolve(data.dsa_device_id);
-      } else {
-        const newId =
-          "dev_" +
-          Math.random().toString(36).substr(2, 9) +
-          Date.now().toString(36);
-        chrome.storage.local.set({ dsa_device_id: newId }, () =>
-          resolve(newId)
-        );
-      }
-    });
-  });
-}
-
 function getStoredKey() {
   return new Promise((resolve) => {
     chrome.storage.local.get("gemini_api_key", (data) => {
       resolve(data.gemini_api_key || null);
+    });
+  });
+}
+
+// ── Local History Helpers ──
+const HISTORY_KEY = "dsa_local_history";
+const MAX_HISTORY = 50;
+
+function saveHintToHistory(problem, level, content) {
+  chrome.storage.local.get(HISTORY_KEY, (data) => {
+    const history = data[HISTORY_KEY] || [];
+    history.unshift({
+      date: new Date().toISOString(),
+      title: problem.title || "Unknown",
+      platform: problem.platform || "",
+      level,
+      content: content.slice(0, 500),
+    });
+    if (history.length > MAX_HISTORY) history.splice(MAX_HISTORY);
+    chrome.storage.local.set({ [HISTORY_KEY]: history });
+  });
+}
+
+function loadLocalHistory() {
+  if (!historyContainer) return;
+  historyContainer.innerHTML =
+    '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-faint)">Loading…</td></tr>';
+  if (historyEmpty) historyEmpty.style.display = "none";
+
+  chrome.storage.local.get(HISTORY_KEY, (data) => {
+    const history = data[HISTORY_KEY] || [];
+    historyContainer.innerHTML = "";
+
+    if (history.length === 0) {
+      if (historyEmpty) historyEmpty.style.display = "block";
+      return;
+    }
+
+    history.forEach((item) => {
+      const dateStr = new Date(item.date).toLocaleDateString();
+      const tr = document.createElement("tr");
+      const snippet = (item.content || "").replace(/#/g, "").slice(0, 120) + "…";
+      tr.innerHTML = `
+        <td class="history-date">${dateStr}</td>
+        <td class="history-prob" title="${item.title}">${item.title}</td>
+        <td><span class="history-lvl">L${item.level}</span></td>
+        <td><div class="history-snippet">${snippet}</div></td>
+      `;
+      historyContainer.appendChild(tr);
     });
   });
 }
@@ -171,15 +187,11 @@ function getStoredKey() {
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
     if (knob) knob.textContent = theme === "light" ? "☀️" : "🌙";
-    try {
-      localStorage.setItem("cma-theme", theme);
-    } catch (e) {}
+    try { localStorage.setItem("cma-theme", theme); } catch (e) {}
   }
 
   let saved = "dark";
-  try {
-    saved = localStorage.getItem("cma-theme") || "dark";
-  } catch (e) {}
+  try { saved = localStorage.getItem("cma-theme") || "dark"; } catch (e) {}
   applyTheme(saved);
 
   toggleBtn.addEventListener("click", () => {
@@ -197,7 +209,7 @@ document.querySelectorAll(".tab").forEach((tab) => {
     const panel = $(`tab-${tab.dataset.tab}`);
     if (panel) panel.classList.add("active");
     if (tab.dataset.tab === "history") {
-      fetchHistory();
+      loadLocalHistory();
     }
   });
 });
@@ -217,8 +229,8 @@ if (saveKeyBtn) {
       }
       if (apiKeyInput) apiKeyInput.value = "";
       setTimeout(() => {
-        if (keyStatus) keyStatus.textContent = "Key stored ✓";
-      }, 1500);
+        if (keyStatus) keyStatus.textContent = `Key stored ✓ (${key.slice(0, 6)}…)`;
+      }, 1200);
     });
   });
 }
@@ -235,109 +247,156 @@ async function loadKeyStatus() {
   }
 }
 
-// ── Precomputation ──
-async function precomputeHint(level) {
-  if (!currentProblem) return;
+// ── Test API Connection ──
+async function testApiConnection() {
+  const key = await getStoredKey();
+  if (!apiConnStatus) return;
+
+  if (!key) {
+    apiConnStatus.textContent = "No API key stored.";
+    apiConnStatus.className = "key-status";
+    return;
+  }
+
+  apiConnStatus.textContent = "Testing…";
+  apiConnStatus.className = "key-status";
+
   try {
-    await fetch(`${API_BASE_URL}/hint`, {
+    const cleanKey = key.trim().replace(/['"]+/g, '');
+    const res = await fetch(`${GEMINI_URL}?key=${cleanKey}`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "X-Device-Id": DEVICE_ID,
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        problem: currentProblem,
-        level: level,
-        previousHints: getPreviousHints(level),
-        stream: false,
+        contents: [{ parts: [{ text: "Reply with just: ok" }] }]
       }),
+      signal: AbortSignal.timeout(8000),
     });
-  } catch (e) {
-    // Ignore precompute errors silently
-  }
-}
 
-// ── Server Health ──
-async function checkServerHealth() {
-  if (!serverStatusIcon || !serverStatusText) return false;
-  try {
-    const res = await fetch(`${API_BASE_URL}/health`, {
-      signal: AbortSignal.timeout(3000),
-    });
     if (res.ok) {
-      serverStatusIcon.textContent = "●";
-      serverStatusText.textContent = "Connected · localhost:3001";
-      serverStatusText.style.color = "var(--green)";
-      return true;
+      const data = await res.json();
+      let text = data?.output_text || data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      if (!text && data?.steps) {
+        try {
+          const modelSteps = data.steps.filter(step => step.model_output);
+          const lastStep = modelSteps[modelSteps.length - 1];
+          text = lastStep.model_output.content.find(c => c.text).text || "";
+        } catch (e) {
+          text = "";
+        }
+      }
+      apiConnStatus.textContent = text
+        ? "✓ Connection successful"
+        : "✓ Connected (empty response)";
+      apiConnStatus.className = "key-status ok";
+    } else {
+      const err = await res.json().catch(() => ({}));
+      const msg = err.error?.message || `HTTP ${res.status}`;
+      apiConnStatus.textContent = `✗ ${msg}`;
+      apiConnStatus.className = "key-status error";
     }
   } catch (e) {
-    serverStatusIcon.textContent = "○";
-    serverStatusText.textContent = "Backend offline — start server";
-    serverStatusText.style.color = "var(--red)";
+    apiConnStatus.textContent = `✗ ${e.message}`;
+    apiConnStatus.className = "key-status error";
   }
-  return false;
 }
 
-// ── Hint Streaming ──
+const testConnBtn = $("test-conn-btn");
+if (testConnBtn) testConnBtn.addEventListener("click", testApiConnection);
+
+// ── Prompt Builder ──
+function buildHintPrompt(problem, level, previousHints) {
+  const levelConfig = {
+    1: {
+      label: "Level 1 — Nudge",
+      instruction:
+        "Give a very subtle nudge. No code. Just point the user toward the right mental model or data structure in 2-3 sentences. Be Socratic.",
+    },
+    2: {
+      label: "Level 2 — Approach",
+      instruction:
+        "Describe the algorithmic approach clearly. You may use pseudocode. Explain the time/space complexity. Still don't give away the exact implementation.",
+    },
+    3: {
+      label: "Level 3 — Near-Solution",
+      instruction:
+        "Provide a near-complete solution. Include working pseudocode or code snippets with key logic. Explain each step.",
+    },
+  };
+
+  const cfg = levelConfig[level] || levelConfig[1];
+  let prompt = `You are a DSA mentor helping a student solve a programming problem.\n\n`;
+  prompt += `Problem Title: ${problem.title || "Unknown"}\n`;
+  prompt += `Platform: ${problem.platform || "unknown"}\n`;
+  if (problem.description) {
+    prompt += `\nProblem Statement:\n${problem.description.slice(0, 2000)}\n`;
+  }
+  if (problem.examples) {
+    prompt += `\nExamples:\n${problem.examples.slice(0, 800)}\n`;
+  }
+  if (problem.language) {
+    prompt += `\nCRITICAL: The user is writing code in ${problem.language}. Ensure any code snippets provided are strictly in ${problem.language}.\n`;
+  }
+
+  if (previousHints.length > 0) {
+    prompt += `\nPrevious hints already given (do NOT repeat these):\n`;
+    previousHints.forEach((h, i) => {
+      prompt += `--- Hint ${i + 1} ---\n${h.slice(0, 400)}\n`;
+    });
+    prompt += `\nNow give the next level hint that builds on the above.\n`;
+  }
+
+  prompt += `\nTask: ${cfg.label}\nInstruction: ${cfg.instruction}\n`;
+  prompt += `\nCRITICAL FORMATTING RULES:
+1. Format your response in clear markdown. Be concise and educational.
+2. DO NOT use LaTeX formatting (like $O(N)$ or $\\mathcal{O}(N)$) for mathematical expressions. You MUST use plain text like O(N) or standard markdown code blocks, otherwise the UI will break.`;
+  return prompt;
+}
+
+// ── Gemini Streaming Hint ──
 async function getHints() {
   if (!currentProblem) return;
 
-  const hasLocal = await checkServerHealth();
-  if (!hasLocal) {
+  const key = await getStoredKey();
+  if (!key) {
     showError(
-      "Backend Offline",
-      "Start the server with 'npm run dev' in server/ and try again."
+      "No API Key",
+      "Go to Settings → paste your Gemini API key and click Save."
     );
     return;
   }
 
   showLoader("Generating hint…");
 
+  const prompt = buildHintPrompt(currentProblem, selectedLevel, getPreviousHints(selectedLevel));
+
   try {
-    const response = await fetch(`${API_BASE_URL}/hint`, {
+    const cleanKey = key.trim().replace(/['"]+/g, '');
+    const response = await fetch(`${GEMINI_URL}?key=${cleanKey}`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "X-Device-Id": DEVICE_ID,
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        problem: currentProblem,
-        level: selectedLevel,
-        previousHints: getPreviousHints(selectedLevel),
-        stream: true,
-      }),
+        contents: [{ parts: [{ text: prompt }] }]
+      })
     });
 
-    // Check for non-SSE error responses
-    const contentType = response.headers.get("content-type") || "";
-    if (!response.ok && !contentType.includes("text/event-stream")) {
+    if (!response.ok) {
       const errData = await response.json().catch(() => ({}));
-      if (errData.error === "quota_exceeded") {
-        showError(
-          "AI Quota Reached",
-          errData.message || "Try again later or check your API key quota."
-        );
-        return;
+      const msg = errData.error?.message || `HTTP ${response.status}`;
+      if (response.status === 429) {
+        showError("Quota Reached", "Gemini API quota exceeded. Wait a moment or check your plan.");
+      } else if (response.status === 400) {
+        showError("Invalid Key", "Your API key may be invalid. Check Settings.");
+      } else {
+        showError("API Error", msg);
       }
-      if (errData.error === "model_unavailable") {
-        showError(
-          "Model Unavailable",
-          errData.message || "The AI model is not available."
-        );
-        return;
-      }
-      showError(
-        "API Error",
-        errData.error || `Server returned ${response.status}`
-      );
       return;
     }
 
-    const reader = response.body.getReader();
-    const decoder = new TextDecoder("utf-8");
-    let done = false;
-    let fullText = "";
-
+    // Interactions API: parse output_text directly (no SSE streaming)
     if (outputTag) outputTag.textContent = `HINT · LEVEL ${selectedLevel}`;
     if (outputText) outputText.innerHTML = "";
     if (outputBox) outputBox.classList.add("visible");
@@ -345,75 +404,31 @@ async function getHints() {
     hideError();
     hideSimilarEmpty();
 
-    let buffer = "";
-
-    while (!done) {
-      const { value, done: readerDone } = await reader.read();
-      done = readerDone;
-      if (value) {
-        buffer += decoder.decode(value, { stream: true });
-        
-        let newlineIdx;
-        // SSE messages are separated by \n\n
-        while ((newlineIdx = buffer.indexOf("\n\n")) >= 0) {
-          const message = buffer.slice(0, newlineIdx);
-          buffer = buffer.slice(newlineIdx + 2);
-
-          const lines = message.split("\n");
-          for (const line of lines) {
-            if (line.startsWith("data: ")) {
-              const dataStr = line.slice(6).trim();
-              if (!dataStr || dataStr === "[DONE]") {
-                done = true;
-                break;
-              }
-              try {
-                const parsed = JSON.parse(dataStr);
-
-                if (parsed.error === "quota_exceeded") {
-                  showError("AI Quota Reached", parsed.message || "Try again later.");
-                  return;
-                }
-                if (parsed.error === "model_unavailable") {
-                  showError("Model Unavailable", parsed.message || "Check server config.");
-                  return;
-                }
-                if (parsed.error) {
-                  showError("Generation Error", parsed.message || "Hint generation failed.");
-                  return;
-                }
-
-                if (parsed.token) {
-                  fullText += parsed.token;
-                  if (outputText) {
-                    outputText.innerHTML = renderMarkdown(fullText);
-                    outputText.scrollTop = outputText.scrollHeight;
-                  }
-                }
-
-                if (parsed.done) {
-                  updateRequestCounter(parsed.requestCount);
-                }
-              } catch (e) {
-                // Skip unparseable chunks
-              }
-            }
-          }
-        }
+    const data = await response.json();
+    let fullText = data?.output_text || data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    if (!fullText && data?.steps) {
+      try {
+        const modelSteps = data.steps.filter(step => step.model_output);
+        const lastStep = modelSteps[modelSteps.length - 1];
+        fullText = lastStep.model_output.content.find(c => c.text).text || "";
+      } catch (e) {
+        fullText = "";
       }
     }
 
-    // Store hint in client-side session
-    sessionHints[selectedLevel] = fullText;
+    if (!fullText) {
+      showError("Empty Response", "Gemini returned an empty response. Please try again.");
+      return;
+    }
 
-    // Mark level as completed and show Next button
+    if (outputText) {
+      outputText.innerHTML = renderMarkdown(fullText);
+    }
+
+
+    // Update UI
     completedLevels.add(selectedLevel);
     updateLevelBadges();
-
-    // Trigger background precomputation for the next level
-    if (selectedLevel < 3) {
-      precomputeHint(selectedLevel + 1);
-    }
 
     if (getHintBtn) getHintBtn.style.display = "none";
     if (nextHintBtn) {
@@ -427,69 +442,104 @@ async function getHints() {
     }
   } catch (err) {
     hideLoader();
-    showError(
-      "Connection Error",
-      `Could not connect to backend: ${err.message}`
-    );
+    showError("Network Error", `Could not reach Gemini API: ${err.message}`);
   }
 }
 
-// ── Similar Problems ──
+// ── Similar Problems (non-streaming) ──
 async function getSimilarProblems() {
   if (!currentProblem) return;
+
+  const key = await getStoredKey();
+  if (!key) {
+    showError("No API Key", "Go to Settings → paste your Gemini API key and click Save.");
+    return;
+  }
 
   hideSimilarEmpty();
   showLoader("Finding similar problems…");
 
+  const prompt = `You are a DSA problem recommender.
+
+Problem: "${currentProblem.title}"
+Platform: ${currentProblem.platform || "unknown"}
+${currentProblem.description ? `Description (partial): ${currentProblem.description.slice(0, 800)}` : ""}
+
+Identify the core algorithmic topics of this problem, then list 5 similar practice problems from LeetCode or Codeforces.
+
+Respond ONLY with a valid JSON object in this exact format (no markdown, no extra text, no LaTeX):
+{
+  "topics": ["topic1", "topic2"],
+  "problems": [
+    { "title": "Problem Name", "difficulty": "Easy|Medium|Hard or Rating (e.g. 1200)", "url": "https://leetcode.com/problems/...", "tags": ["tag1", "tag2"] }
+  ]
+}`;
+
   try {
-    const res = await fetch(`${API_BASE_URL}/similar`, {
+    const cleanKey = key.trim().replace(/['"]+/g, '');
+    const res = await fetch(`${GEMINI_URL}?key=${cleanKey}`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "X-Device-Id": DEVICE_ID,
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify({ problem: currentProblem }),
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }]
+      }),
+      signal: AbortSignal.timeout(20000),
     });
 
     if (!res.ok) {
       const errData = await res.json().catch(() => ({}));
-      if (errData.error === "quota_exceeded") {
-        showError(
-          "AI Quota Reached",
-          errData.message || "Try again later."
-        );
-        return;
-      }
-      if (errData.error === "model_unavailable") {
-        showError(
-          "Model Unavailable",
-          errData.message || "Check server config."
-        );
-        return;
-      }
-      showError(
-        "API Error",
-        errData.error || `Server returned ${res.status}`
-      );
+      const msg = errData.error?.message || `HTTP ${res.status}`;
+      showError("API Error", msg);
       return;
     }
 
     const data = await res.json();
+    let rawText = data?.output_text || data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+    if (!rawText && data?.steps) {
+      try {
+        const modelSteps = data.steps.filter(step => step.model_output);
+        const lastStep = modelSteps[modelSteps.length - 1];
+        rawText = lastStep.model_output.content.find(c => c.text).text || "";
+      } catch (e) {
+        rawText = "";
+      }
+    }
 
-    if (data.problems && data.problems.length > 0) {
+    // Strip markdown code fences if present
+    const cleaned = rawText.replace(/```json\s*/gi, "").replace(/```\s*/g, "").trim();
+
+    let parsed;
+    try {
+      parsed = JSON.parse(cleaned);
+    } catch (e) {
+      // Fallback: try to find JSON object in the text
+      const match = cleaned.match(/\{[\s\S]*\}/);
+      if (match) {
+        try { parsed = JSON.parse(match[0]); } catch (e2) {
+          showError("Parse Error", "Could not parse Gemini's response. Please try again.");
+          return;
+        }
+      } else {
+        showError("Parse Error", "Gemini returned an unexpected format. Try again.");
+        return;
+      }
+    }
+
+    if (parsed.problems && parsed.problems.length > 0) {
       let html = "";
 
-      // Show classification
-      if (data.classification?.topics?.length) {
+      if (parsed.topics?.length) {
         html += `<div style="margin-bottom:8px;">`;
-        html += `<span class="section-label" style="margin:0; display:inline;">Topics: </span>`;
-        data.classification.topics.forEach((t) => {
+        html += `<span class="section-label" style="margin:0;display:inline;">Topics: </span>`;
+        parsed.topics.forEach((t) => {
           html += `<span class="sim-badge" style="margin-right:3px;">${t}</span>`;
         });
         html += `</div>`;
       }
 
-      data.problems.forEach((p) => {
+      parsed.problems.forEach((p) => {
         let diffClass = "sim-badge";
         if (p.difficulty === "Easy") diffClass += " easy";
         else if (p.difficulty === "Medium") diffClass += " medium";
@@ -502,12 +552,7 @@ async function getSimilarProblems() {
             </div>
             <div class="similar-meta">
               ${p.difficulty ? `<span class="${diffClass}">${p.difficulty}</span>` : ""}
-              ${
-                p.topicTags
-                  ?.slice(0, 3)
-                  .map((t) => `<span class="sim-badge">${t}</span>`)
-                  .join("") || ""
-              }
+              ${(p.tags || []).slice(0, 3).map((t) => `<span class="sim-badge">${t}</span>`).join("")}
             </div>
           </div>
         `;
@@ -515,60 +560,14 @@ async function getSimilarProblems() {
 
       setOutput(html, "SIMILAR PROBLEMS");
     } else {
-      setOutput(
-        '<div class="empty-state">No similar problems found.</div>',
-        "SIMILAR PROBLEMS"
-      );
+      setOutput('<div class="empty-state">No similar problems found.</div>', "SIMILAR PROBLEMS");
     }
   } catch (err) {
-    showError(
-      "Connection Error",
-      `Could not fetch similar problems: ${err.message}`
-    );
+    showError("Network Error", `Could not reach Gemini API: ${err.message}`);
   }
 }
 
-// ── History ──
-async function fetchHistory() {
-  if (!historyContainer) return;
-  historyContainer.innerHTML =
-    '<tr><td colspan="4" style="text-align:center; padding:16px; color:var(--text-faint)">Loading…</td></tr>';
-  if (historyEmpty) historyEmpty.style.display = "none";
-
-  try {
-    const res = await fetch(`${API_BASE_URL}/history?deviceId=${DEVICE_ID}`, {
-      signal: AbortSignal.timeout(3000),
-    });
-    if (!res.ok) throw new Error("Failed to fetch");
-    const data = await res.json();
-    historyContainer.innerHTML = "";
-
-    if (!data.history || data.history.length === 0) {
-      if (historyEmpty) historyEmpty.style.display = "block";
-      return;
-    }
-
-    data.history.forEach((item) => {
-      const dateStr = new Date(item.createdAt).toLocaleDateString();
-      const tr = document.createElement("tr");
-      const probTitle = item.problem ? item.problem.title : "Unknown";
-      const snippet =
-        (item.content || "").replace(/#/g, "").slice(0, 120) + "…";
-      tr.innerHTML = `
-        <td class="history-date">${dateStr}</td>
-        <td class="history-prob" title="${probTitle}">${probTitle}</td>
-        <td><span class="history-lvl">L${item.level}</span></td>
-        <td><div class="history-snippet">${snippet}</div></td>
-      `;
-      historyContainer.appendChild(tr);
-    });
-  } catch (e) {
-    historyContainer.innerHTML = "";
-    if (historyEmpty) historyEmpty.style.display = "block";
-  }
-}
-
-// ── Problem Detection ──
+// ── Platform Detection & Theming ──
 async function detectProblem() {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   const url = tab?.url || "";
@@ -578,6 +577,16 @@ async function detectProblem() {
     url.includes("codeforces.com/problemset/") ||
     url.includes("codeforces.com/contest/") ||
     url.includes("codeforces.com/gym/");
+
+  // Apply platform theme
+  const root = document.documentElement;
+  if (isLeetCode) {
+    root.setAttribute("data-platform", "leetcode");
+  } else if (isCodeforces) {
+    root.setAttribute("data-platform", "codeforces");
+  } else {
+    root.removeAttribute("data-platform");
+  }
 
   if (!isLeetCode && !isCodeforces) {
     if (noProblem) noProblem.style.display = "flex";
@@ -594,52 +603,48 @@ async function detectProblem() {
   }
 
   try {
-    const problem = await chrome.tabs.sendMessage(tab.id, {
-      action: "getProblem",
-    });
+    const problem = await chrome.tabs.sendMessage(tab.id, { action: "getProblem" });
     if (problem?.title || problem?.description) {
       currentProblem = problem;
       currentProblem.platform = isLeetCode ? "leetcode" : "codeforces";
       currentProblem.url = url;
 
-      // Reset session hints for new problem
+      // Reset session for new problem
       sessionHints = {};
       completedLevels.clear();
       selectedLevel = 1;
 
       if (noProblem) noProblem.style.display = "none";
       if (problemCard) problemCard.classList.add("visible");
-      if (problemTitle)
-        problemTitle.textContent = problem.title || "Untitled Problem";
-      if (problemPlatform)
+      if (problemTitle) problemTitle.textContent = problem.title || "Untitled Problem";
+
+      // Inject platform text badge
+      if (problemPlatform) {
         problemPlatform.textContent = isLeetCode ? "LC" : "CF";
-      if (problemDesc)
+      }
+
+      if (problemDesc) {
         problemDesc.textContent =
           (problem.description?.slice(0, 180) || "No description found.") +
           (problem.description?.length > 180 ? "…" : "");
+      }
+
       if (actionBtns) actionBtns.style.display = "flex";
       if (levelBadges) levelBadges.style.display = "flex";
       if (similarEmpty) similarEmpty.style.display = "block";
       updateLevelBadges();
-
-      // Trigger precomputation for Level 1 as soon as problem is detected
-      precomputeHint(1);
     } else {
       if (noProblem) {
         noProblem.style.display = "flex";
-        noProblem.querySelector("strong").textContent =
-          "Couldn't extract problem";
-        noProblem.querySelector("span").textContent =
-          "Try refreshing the problem page.";
+        noProblem.querySelector("strong").textContent = "Couldn't extract problem";
+        noProblem.querySelector("span").textContent = "Try refreshing the problem page.";
       }
     }
   } catch (e) {
     if (noProblem) {
       noProblem.style.display = "flex";
-      noProblem.querySelector("strong").textContent =
-        "Content script not ready";
-      noProblem.querySelector("span").textContent =
-        "Refresh the problem page and try again.";
+      noProblem.querySelector("strong").textContent = "Content script not ready";
+      noProblem.querySelector("span").textContent = "Refresh the problem page and try again.";
     }
   }
 }
@@ -650,15 +655,13 @@ if (copyBtn) {
     const text = outputText?.innerText || "";
     navigator.clipboard.writeText(text).then(() => {
       copyBtn.textContent = "Copied";
-      setTimeout(() => {
-        if (copyBtn) copyBtn.textContent = "Copy";
-      }, 1500);
+      setTimeout(() => { if (copyBtn) copyBtn.textContent = "Copy"; }, 1500);
     });
   });
 }
 
 // ── Event Listeners ──
-if (getHintBtn)
+if (getHintBtn) {
   getHintBtn.addEventListener("click", () => {
     selectedLevel = 1;
     completedLevels.clear();
@@ -666,6 +669,7 @@ if (getHintBtn)
     updateLevelBadges();
     getHints();
   });
+}
 
 if (nextHintBtn) {
   nextHintBtn.addEventListener("click", () => {
@@ -681,10 +685,7 @@ if (similarBtn) similarBtn.addEventListener("click", getSimilarProblems);
 
 // ── Init ──
 async function init() {
-  DEVICE_ID = await getDeviceId();
-  if (deviceIdDisp) deviceIdDisp.textContent = DEVICE_ID;
   detectProblem();
-  checkServerHealth();
   loadKeyStatus();
   updateLevelBadges();
 }

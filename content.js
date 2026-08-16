@@ -93,7 +93,18 @@ function extractLeetCode() {
     ? [...descEl.querySelectorAll('pre')].map(e => e.innerText).join('\n---\n')
     : "";
 
-  return { title: title.trim(), description: description.slice(0, 3000).trim(), examples };
+  let language = "";
+  const langBtn = document.querySelector('button[id^="headlessui-listbox-button"]') || document.querySelector('[data-cy="lang-select"]');
+  if (langBtn) {
+    language = langBtn.innerText.trim();
+  } else {
+    const langs = ["C++", "Java", "Python", "Python3", "C", "C#", "JavaScript", "TypeScript", "PHP", "Swift", "Kotlin", "Dart", "Go", "Ruby", "Scala", "Rust", "Racket", "Erlang", "Elixir"];
+    const buttons = [...document.querySelectorAll('button')];
+    const found = buttons.find(b => langs.includes(b.innerText.trim()));
+    if (found) language = found.innerText.trim();
+  }
+
+  return { title: title.trim(), description: description.slice(0, 3000).trim(), examples, language };
 }
 
 function extractCodeforces() {
@@ -108,7 +119,13 @@ function extractCodeforces() {
     examples += `Example ${counter + 1}:\nInput:\n${inputs[counter]}\nOutput:\n${outputs[counter]}\n\n`;
   }
 
-  return { title: title.trim(), description: description.slice(0, 3000).trim(), examples: examples.trim() };
+  let language = "";
+  const select = document.querySelector('select[name="programTypeId"]');
+  if (select) {
+    language = select.options[select.selectedIndex]?.text || "";
+  }
+
+  return { title: title.trim(), description: description.slice(0, 3000).trim(), examples: examples.trim(), language };
 }
 
 function extractHackerRank() {

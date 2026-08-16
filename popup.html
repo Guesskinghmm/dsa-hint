@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code Mentor AI</title>
+  <title>AlgoPush</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,14 +17,13 @@
 <body>
 
   <header>
-    <div class="logo">CMA</div>
-    <div>
-      <h1>Code Mentor AI</h1>
+    <div class="header-brand">
+      <h1>AlgoPush</h1>
       <p>DSA hints &amp; problem analysis</p>
     </div>
     <div class="header-controls">
       <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-        <span class="knob" id="theme-knob">Dark</span>
+        <span class="knob" id="theme-knob">🌙</span>
       </button>
       <div class="status-dot" id="status-dot" title="Not on a supported page"></div>
     </div>
@@ -33,7 +32,6 @@
   <main>
     <div class="tabs">
       <div class="tab active" data-tab="hints">Hints</div>
-      <div class="tab" data-tab="history">History</div>
       <div class="tab" data-tab="settings">Settings</div>
     </div>
 
@@ -43,7 +41,8 @@
       <div class="card" id="problem-card">
         <div id="problem-title">
           <span id="problem-title-text">Loading…</span>
-          <span class="platform-badge" id="problem-platform">LC</span>
+          <!-- Platform logo injected here by popup.js -->
+          <span class="platform-logo" id="problem-platform"></span>
         </div>
         <div id="problem-desc"></div>
       </div>
@@ -74,7 +73,7 @@
         <span id="loader-text">Thinking…</span>
       </div>
 
-      <!-- Error state component -->
+      <!-- Error state -->
       <div class="error-state" id="error-box" style="display:none">
         <div class="error-icon">!</div>
         <div class="error-content">
@@ -100,26 +99,7 @@
 
     </div>
 
-    <!-- HISTORY TAB -->
-    <div class="tab-panel" id="tab-history">
-      <div class="table-wrapper">
-        <table class="history-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Problem</th>
-              <th>Lvl</th>
-              <th>Hint</th>
-            </tr>
-          </thead>
-          <tbody id="history-container"></tbody>
-        </table>
-      </div>
-      <div id="history-empty">
-        <div style="font-size:22px; margin-bottom:6px;">--</div>
-        No hint history yet.<br>Get a hint to see it here!
-      </div>
-    </div>
+
 
     <!-- SETTINGS TAB -->
     <div class="tab-panel" id="tab-settings">
@@ -133,12 +113,14 @@
       </div>
 
       <div class="card settings-card">
-        <div class="status-box">
-          <div class="status-icon" id="server-status-icon">●</div>
-          <div>
-            <div class="status-text">Backend Status</div>
-            <div class="status-subtext" id="server-status-text">Checking…</div>
-          </div>
+        <div class="section-label">API Connection</div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+          <button class="save-btn" id="test-conn-btn" style="padding:7px 12px; font-size:10px;">Test Key</button>
+          <div class="key-status" id="api-conn-status" style="margin:0;"></div>
+        </div>
+        <div style="color:var(--text-faint); font-size:10px; font-family:'JetBrains Mono',monospace; line-height:1.6;">
+          Direct calls to Gemini REST API.<br>
+          No backend server required.
         </div>
       </div>
 
@@ -147,11 +129,8 @@
         <div style="color:var(--text-muted); line-height:1.6; font-size:11px;">
           Works on <span style="color:var(--accent-text); font-weight:600;">leetcode.com/problems/*</span> and
           <span style="color:var(--accent-text); font-weight:600;">codeforces.com/problemset/*</span>.<br><br>
-          Powered by <strong style="color:var(--text)">Gemini 2.5 Flash</strong> &amp; <strong
-            style="color:var(--text)">pgvector</strong>.<br><br>
-          <span style="font-size: 10px;">Device ID:
-            <code id="device-id-display"
-              style="background:var(--code-bg); padding:1px 4px; border-radius:3px; font-size:9px; font-family:'JetBrains Mono',monospace;">…</code></span>
+          Powered by <strong style="color:var(--text)">Gemini 3.5 Flash</strong>.<br>
+          Your API key stays on your device only.
         </div>
       </div>
     </div>

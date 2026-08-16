@@ -87,6 +87,42 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
+/* ─── LeetCode Platform Theme ─── */
+html[data-platform="leetcode"] {
+  --accent:        #ffa116;
+  --accent-dim:    rgba(255, 161, 22, 0.12);
+  --accent-glow:   rgba(255, 161, 22, 0.28);
+  --accent-text:   #ffb84d;
+  --border-accent: rgba(255, 161, 22, 0.35);
+}
+
+html[data-platform="leetcode"][data-theme="dark"] {
+  --bg:          #1a1a1a;
+  --bg-subtle:   #1e1e1e;
+  --surface:     #282828;
+  --surface-card: #282828;
+  --surface-hover: #2f2f2f;
+  --surface-raised: #333333;
+}
+
+/* ─── Codeforces Platform Theme ─── */
+html[data-platform="codeforces"] {
+  --accent:        #3b82f6;
+  --accent-dim:    rgba(59, 130, 246, 0.12);
+  --accent-glow:   rgba(59, 130, 246, 0.28);
+  --accent-text:   #60a5fa;
+  --border-accent: rgba(59, 130, 246, 0.35);
+}
+
+html[data-platform="codeforces"][data-theme="dark"] {
+  --bg:          #0d1117;
+  --bg-subtle:   #10161e;
+  --surface:     #161b22;
+  --surface-card: #161b22;
+  --surface-hover: #1c2230;
+  --surface-raised: #1f2740;
+}
+
 /* ─── Body ─── */
 body {
   width: 400px;
@@ -113,25 +149,20 @@ header {
   z-index: 10;
 }
 
-.logo {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(135deg, var(--accent), #06b6d4);
-  border-radius: 8px;
+/* .header-brand: typography-only branding, no icon box */
+.header-brand {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: 15px;
-  flex-shrink: 0;
-  box-shadow: 0 2px 12px var(--accent-glow);
 }
 
 header h1 {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   color: var(--text-strong);
   font-family: 'Space Grotesk', sans-serif;
+  line-height: 1;
 }
 
 header p {
@@ -299,21 +330,26 @@ main {
   -webkit-box-orient: vertical;
 }
 
-/* ─── Platform Badge ─── */
-.platform-badge {
+.platform-logo {
   display: inline-flex;
   align-items: center;
-  font-size: 9px;
-  font-weight: 700;
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.5px;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 2px 6px;
   background: var(--accent-dim);
   color: var(--accent-text);
   border: 1px solid var(--border-accent);
-  border-radius: 4px;
-  padding: 1px 5px;
-  flex-shrink: 0;
-  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.platform-logo svg {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 /* ─── No Problem State ─── */
@@ -371,9 +407,7 @@ main {
 }
 
 .btn-primary:hover:not(:disabled) {
-  filter: brightness(1.15);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px var(--accent-glow);
+  filter: brightness(1.1);
 }
 
 .btn-secondary {
@@ -385,7 +419,6 @@ main {
 .btn-secondary:hover:not(:disabled) {
   border-color: var(--accent);
   color: var(--accent-text);
-  transform: translateY(-1px);
 }
 
 .btn:disabled {
@@ -753,7 +786,8 @@ main {
   font-family: 'JetBrains Mono', monospace;
 }
 
-.key-status.ok { color: var(--green); }
+.key-status.ok    { color: var(--green); }
+.key-status.error { color: var(--red);   }
 
 /* ─── History Tab ─── */
 .table-wrapper {
