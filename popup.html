@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Mentor AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="popup.css" />
+  <script src="marked.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">CMA</div>
+    <div>
+      <h1>Code Mentor AI</h1>
+      <p>DSA hints &amp; problem analysis</p>
+    </div>
+    <div class="header-controls">
+      <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+        <span class="knob" id="theme-knob">Dark</span>
+      </button>
+      <div class="status-dot" id="status-dot" title="Not on a supported page"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <div class="tab active" data-tab="hints">Hints</div>
+      <div class="tab" data-tab="history">History</div>
+      <div class="tab" data-tab="settings">Settings</div>
+    </div>
+
+    <!-- HINTS TAB -->
+    <div class="tab-panel active" id="tab-hints">
+
+      <div class="card" id="problem-card">
+        <div id="problem-title">
+          <span id="problem-title-text">Loading…</span>
+          <span class="platform-badge" id="problem-platform">LC</span>
+        </div>
+        <div id="problem-desc"></div>
+      </div>
+
+      <div class="card" id="no-problem">
+        <div class="big" style="font-size:24px; margin-bottom:8px;">[  ]</div>
+        <strong>No problem detected</strong>
+        <span>Open a LeetCode or Codeforces problem page, then click the extension.</span>
+      </div>
+
+      <!-- Hint level progress -->
+      <div id="level-badges" class="hint-level-badges" style="display:none">
+        <span class="level-badge active" data-level="1">L1 · Nudge</span>
+        <span class="level-badge" data-level="2">L2 · Approach</span>
+        <span class="level-badge" data-level="3">L3 · Solution</span>
+      </div>
+
+      <div id="action-btns" class="btn-row" style="display:none">
+        <button class="btn btn-primary" id="get-hint-btn">Get Hint</button>
+        <button class="btn btn-primary" id="next-hint-btn" style="display:none;">Next Hint</button>
+        <button class="btn btn-secondary" id="similar-btn">Similar</button>
+      </div>
+
+      <div class="loader" id="loader">
+        <div class="dots">
+          <span></span><span></span><span></span>
+        </div>
+        <span id="loader-text">Thinking…</span>
+      </div>
+
+      <!-- Error state component -->
+      <div class="error-state" id="error-box" style="display:none">
+        <div class="error-icon">!</div>
+        <div class="error-content">
+          <div class="error-title" id="error-title">Error</div>
+          <div class="error-message" id="error-message">Something went wrong.</div>
+        </div>
+      </div>
+
+      <div class="card" id="output-box">
+        <div class="output-header">
+          <span class="output-tag" id="output-tag">HINT · LEVEL 1</span>
+          <button id="copy-btn" title="Copy to clipboard">Copy</button>
+        </div>
+        <div id="output-text"></div>
+      </div>
+
+      <!-- Similar problems empty state -->
+      <div class="empty-state" id="similar-empty" style="display:none">
+        Click "Similar" to find related problems for practice.
+      </div>
+
+      <div class="request-counter" id="request-counter" style="display:none"></div>
+
+    </div>
+
+    <!-- HISTORY TAB -->
+    <div class="tab-panel" id="tab-history">
+      <div class="table-wrapper">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Problem</th>
+              <th>Lvl</th>
+              <th>Hint</th>
+            </tr>
+          </thead>
+          <tbody id="history-container"></tbody>
+        </table>
+      </div>
+      <div id="history-empty">
+        <div style="font-size:22px; margin-bottom:6px;">--</div>
+        No hint history yet.<br>Get a hint to see it here!
+      </div>
+    </div>
+
+    <!-- SETTINGS TAB -->
+    <div class="tab-panel" id="tab-settings">
+      <div class="card settings-card">
+        <div class="section-label">Gemini API Key</div>
+        <div class="key-row">
+          <input type="password" id="api-key-input" placeholder="AIza…" autocomplete="off" />
+          <button class="save-btn" id="save-key-btn">Save</button>
+        </div>
+        <div class="key-status" id="key-status">No key stored</div>
+      </div>
+
+      <div class="card settings-card">
+        <div class="status-box">
+          <div class="status-icon" id="server-status-icon">●</div>
+          <div>
+            <div class="status-text">Backend Status</div>
+            <div class="status-subtext" id="server-status-text">Checking…</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card settings-card">
+        <div class="section-label">About</div>
+        <div style="color:var(--text-muted); line-height:1.6; font-size:11px;">
+          Works on <span style="color:var(--accent-text); font-weight:600;">leetcode.com/problems/*</span> and
+          <span style="color:var(--accent-text); font-weight:600;">codeforces.com/problemset/*</span>.<br><br>
+          Powered by <strong style="color:var(--text)">Gemini 2.5 Flash</strong> &amp; <strong
+            style="color:var(--text)">pgvector</strong>.<br><br>
+          <span style="font-size: 10px;">Device ID:
+            <code id="device-id-display"
+              style="background:var(--code-bg); padding:1px 4px; border-radius:3px; font-size:9px; font-family:'JetBrains Mono',monospace;">…</code></span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

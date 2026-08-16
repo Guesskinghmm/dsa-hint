@@ -1,0 +1,8035 @@
+[
+  {
+    "leetcodeId": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/two-sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 2,
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "math",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/add-two-numbers/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "sliding-window",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 5,
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 11,
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/container-with-most-water/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 15,
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/3sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 17,
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 19,
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 20,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "stack"
+    ],
+    "url": "https://leetcode.com/problems/valid-parentheses/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 21,
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 22,
+    "title": "Generate Parentheses",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "backtracking",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/generate-parentheses/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 23,
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "topicTags": [
+      "linked-list",
+      "heap",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 33,
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 34,
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 39,
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/combination-sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 42,
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "stack",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/trapping-rain-water/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 46,
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/permutations/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 48,
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/rotate-image/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 49,
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "hash-table",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/group-anagrams/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 53,
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/maximum-subarray/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 55,
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "greedy",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/jump-game/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 56,
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/merge-intervals/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 62,
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/unique-paths/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 70,
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/climbing-stairs/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 72,
+    "title": "Edit Distance",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/edit-distance/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 73,
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 74,
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 76,
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "sliding-window",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/minimum-window-substring/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 78,
+    "title": "Subsets",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/subsets/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 79,
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/word-search/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 84,
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 94,
+    "title": "Binary Tree Inorder Traversal",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "stack"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 98,
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 100,
+    "title": "Same Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/same-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 101,
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/symmetric-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 104,
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 105,
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "divide-and-conquer",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 124,
+    "title": "Binary Tree Maximum Path Sum",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "dynamic-programming",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 125,
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/valid-palindrome/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 128,
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 130,
+    "title": "Surrounded Regions",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/surrounded-regions/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 131,
+    "title": "Palindrome Partitioning",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "backtracking",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/palindrome-partitioning/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 133,
+    "title": "Clone Graph",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/clone-graph/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 138,
+    "title": "Copy List with Random Pointer",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 139,
+    "title": "Word Break",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/word-break/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 141,
+    "title": "Linked List Cycle",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/linked-list-cycle/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 143,
+    "title": "Reorder List",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/reorder-list/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 146,
+    "title": "LRU Cache",
+    "difficulty": "Medium",
+    "topicTags": [
+      "hash-table",
+      "linked-list",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/lru-cache/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 148,
+    "title": "Sort List",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "sorting",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/sort-list/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 152,
+    "title": "Maximum Product Subarray",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/maximum-product-subarray/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 153,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 155,
+    "title": "Min Stack",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/min-stack/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 169,
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/majority-element/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 189,
+    "title": "Rotate Array",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/rotate-array/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 191,
+    "title": "Number of 1 Bits",
+    "difficulty": "Easy",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/number-of-1-bits/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 198,
+    "title": "House Robber",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/house-robber/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 200,
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/number-of-islands/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 206,
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/reverse-linked-list/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 207,
+    "title": "Course Schedule",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/course-schedule/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trie",
+      "string",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 210,
+    "title": "Course Schedule II",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/course-schedule-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 211,
+    "title": "Design Add and Search Words Data Structure",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trie",
+      "string",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 212,
+    "title": "Word Search II",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "trie",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/word-search-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 215,
+    "title": "Kth Largest Element in an Array",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "heap",
+      "sorting",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 217,
+    "title": "Contains Duplicate",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/contains-duplicate/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 226,
+    "title": "Invert Binary Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/invert-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 230,
+    "title": "Kth Smallest Element in a BST",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 235,
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 236,
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 238,
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum"
+    ],
+    "url": "https://leetcode.com/problems/product-of-array-except-self/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 239,
+    "title": "Sliding Window Maximum",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "sliding-window",
+      "queue",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/sliding-window-maximum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 242,
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "hash-table",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/valid-anagram/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 253,
+    "title": "Meeting Rooms II",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 261,
+    "title": "Graph Valid Tree",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/graph-valid-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 268,
+    "title": "Missing Number",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "math",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/missing-number/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 269,
+    "title": "Alien Dictionary",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/alien-dictionary/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 271,
+    "title": "Encode and Decode Strings",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 287,
+    "title": "Find the Duplicate Number",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 295,
+    "title": "Find Median from Data Stream",
+    "difficulty": "Hard",
+    "topicTags": [
+      "heap",
+      "design",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 297,
+    "title": "Serialize and Deserialize Binary Tree",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "string",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 300,
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 322,
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/coin-change/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 323,
+    "title": "Number of Connected Components in an Undirected Graph",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 338,
+    "title": "Counting Bits",
+    "difficulty": "Easy",
+    "topicTags": [
+      "dynamic-programming",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/counting-bits/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 347,
+    "title": "Top K Frequent Elements",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "heap",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 371,
+    "title": "Sum of Two Integers",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/sum-of-two-integers/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 394,
+    "title": "Decode String",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "stack",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/decode-string/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 417,
+    "title": "Pacific Atlantic Water Flow",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 424,
+    "title": "Longest Repeating Character Replacement",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 435,
+    "title": "Non-overlapping Intervals",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 572,
+    "title": "Subtree of Another Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/subtree-of-another-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 647,
+    "title": "Palindromic Substrings",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/palindromic-substrings/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 695,
+    "title": "Max Area of Island",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/max-area-of-island/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 704,
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/binary-search/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 721,
+    "title": "Accounts Merge",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "union-find",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/accounts-merge/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 739,
+    "title": "Daily Temperatures",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 743,
+    "title": "Network Delay Time",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/network-delay-time/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 746,
+    "title": "Min Cost Climbing Stairs",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 763,
+    "title": "Partition Labels",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "greedy",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/partition-labels/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 787,
+    "title": "Cheapest Flights Within K Stops",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "dynamic-programming",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 846,
+    "title": "Hand of Straights",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "greedy",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/hand-of-straights/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 853,
+    "title": "Car Fleet",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "stack",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/car-fleet/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 875,
+    "title": "Koko Eating Bananas",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/koko-eating-bananas/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 973,
+    "title": "K Closest Points to Origin",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "heap",
+      "sorting",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 981,
+    "title": "Time Based Key-Value Store",
+    "difficulty": "Medium",
+    "topicTags": [
+      "hash-table",
+      "binary-search",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/time-based-key-value-store/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 994,
+    "title": "Rotting Oranges",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/rotting-oranges/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1143,
+    "title": "Longest Common Subsequence",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/longest-common-subsequence/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1046,
+    "title": "Last Stone Weight",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/last-stone-weight/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1584,
+    "title": "Min Cost to Connect All Points",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "heap",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 57,
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/insert-interval/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 543,
+    "title": "Diameter of Binary Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 199,
+    "title": "Binary Tree Right Side View",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 110,
+    "title": "Balanced Binary Tree",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/balanced-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1448,
+    "title": "Count Good Nodes in Binary Tree",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 25,
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "topicTags": [
+      "linked-list",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 36,
+    "title": "Valid Sudoku",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/valid-sudoku/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 659,
+    "title": "Encode and Decode TinyURL",
+    "difficulty": "Medium",
+    "topicTags": [
+      "hash-table",
+      "design",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/encode-and-decode-tinyurl/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 355,
+    "title": "Design Twitter",
+    "difficulty": "Medium",
+    "topicTags": [
+      "hash-table",
+      "heap",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/design-twitter/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 40,
+    "title": "Combination Sum II",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/combination-sum-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 90,
+    "title": "Subsets II",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/subsets-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 51,
+    "title": "N-Queens",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/n-queens/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 10,
+    "title": "Regular Expression Matching",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "dynamic-programming",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/regular-expression-matching/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 312,
+    "title": "Burst Balloons",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/burst-balloons/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 329,
+    "title": "Longest Increasing Path in a Matrix",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "dynamic-programming",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 4,
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "binary-search",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 127,
+    "title": "Word Ladder",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "graphs",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/word-ladder/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 332,
+    "title": "Reconstruct Itinerary",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/reconstruct-itinerary/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 778,
+    "title": "Swim in Rising Water",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "binary-search",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/swim-in-rising-water/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 115,
+    "title": "Distinct Subsequences",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/distinct-subsequences/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 518,
+    "title": "Coin Change II",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/coin-change-ii/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 494,
+    "title": "Target Sum",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/target-sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 97,
+    "title": "Interleaving String",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/interleaving-string/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 416,
+    "title": "Partition Equal Subset Sum",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/partition-equal-subset-sum/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1899,
+    "title": "Merge Triplets to Form Target Triplet",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 678,
+    "title": "Valid Parenthesis String",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "greedy",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1851,
+    "title": "Minimum Interval to Include Each Query",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "sorting",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 190,
+    "title": "Reverse Bits",
+    "difficulty": "Easy",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/reverse-bits/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 136,
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/single-number/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 286,
+    "title": "Walls and Gates",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "graphs",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/walls-and-gates/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 1761,
+    "title": "Minimum Degree of a Connected Trio in a Graph",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 303,
+    "title": "Range Sum Query - Immutable",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": 560,
+    "title": "Subarray Sum Equals K",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table",
+      "prefix-sum"
+    ],
+    "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+    "source": "Original"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Weird Algorithm",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1068"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Repetitions",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1069"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Increasing Array",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1094"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number Spiral",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1071"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Knights",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1072"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Sets",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1092"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bit Strings",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1617"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Trailing Zeros",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1618"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Piles",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1754"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Palindrome Reorder",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1755"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Gray Code",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2205"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tower of Hanoi",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2165"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Creating Strings",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1622"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Apple Division",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1623"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Chessboard and Queens",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1624"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Raab Game I",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3399"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Mex Grid Construction",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3419"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Knight Moves Grid",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3217"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Coloring I",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3311"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Digit Queries",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2431"
+  },
+  {
+    "leetcodeId": null,
+    "title": "String Reorder",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1743"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Path Description",
+    "source": "CSES",
+    "difficulty": "Easy",
+    "topicTags": [
+      "math",
+      "simulation",
+      "introductory-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1625"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Numbers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1621"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Apartments",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1084"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Ferris Wheel",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1090"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Concert Tickets",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1091"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Restaurant Customers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1619"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Movie Festival",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1629"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Two Values",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1640"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Subarray Sum",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1643"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stick Lengths",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1074"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Missing Coin Sum",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2183"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Collecting Numbers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2216"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Collecting Numbers II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2217"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Playlist",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1141"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Towers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1073"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Traffic Lights",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1163"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Subarrays",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/3420"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Subsequences",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/3421"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Josephus Problem I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2162"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Josephus Problem II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2163"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nested Ranges Check",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2168"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nested Ranges Count",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2169"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Room Allocation",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1164"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Factory Machines",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1620"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tasks and Deadlines",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1630"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reading Books",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1631"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Three Values",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1641"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Four Values",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1642"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nearest Smaller Values",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1645"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Sums I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1660"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Sums II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1661"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Divisibility",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1662"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Subarrays II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/2428"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Array Division",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1085"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Movie Festival II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1632"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Subarray Sum II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting",
+      "greedy",
+      "sorting-and-searching"
+    ],
+    "url": "https://cses.fi/problemset/task/1644"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dice Combinations",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1633"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimizing Coins",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1634"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Combinations I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1635"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Combinations II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1636"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Removing Digits",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1637"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Paths I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1638"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Book Shop",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1158"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Array Description",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1746"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Towers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/2413"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Rectangle Cutting",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1744"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimal Grid Path",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/3359"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Money Sums",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1745"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Removal Game",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1097"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Sets II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1093"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Mountain Range",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/3314"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Increasing Subsequence",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1145"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Projects",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1140"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Elevator Rides",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1653"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Tilings",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/2181"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Numbers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/2220"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Increasing Subsequence II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "dynamic-programming"
+    ],
+    "url": "https://cses.fi/problemset/task/1748"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Rooms",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1192"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Labyrinth",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1193"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Building Roads",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1666"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Message Route",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1667"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Building Teams",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1668"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Round Trip",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1669"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Monsters",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1194"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Shortest Routes I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1671"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Shortest Routes II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1672"
+  },
+  {
+    "leetcodeId": null,
+    "title": "High Score",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1673"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flight Discount",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1195"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Cycle Finding",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1197"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flight Routes",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1196"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Round Trip II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1678"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest Flight Route",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1680"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Game Routes",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1681"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Investigation",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1202"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Planets Queries I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1750"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Planets Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1160"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Planets Cycles",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1751"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Road Reparation",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1675"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Road Construction",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1676"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flight Routes Check",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1682"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Planets and Kingdoms",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1683"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Giant Pizza",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1684"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Collector",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1686"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Mail Delivery",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1691"
+  },
+  {
+    "leetcodeId": null,
+    "title": "De Bruijn Sequence",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1692"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Teleporters Path",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1693"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hamiltonian Flights",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1690"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Knight's Tour",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1689"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Download Speed",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1694"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Police Chase",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1695"
+  },
+  {
+    "leetcodeId": null,
+    "title": "School Dance",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1696"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Routes",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "graph-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1711"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Static Range Sum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1646"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Static Range Minimum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1647"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dynamic Range Sum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1648"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dynamic Range Minimum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1649"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Range Xor Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1650"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Range Update Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1651"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Forest Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1652"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hotel Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1143"
+  },
+  {
+    "leetcodeId": null,
+    "title": "List Removals",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1749"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Salary Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1144"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Prefix Sum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/2166"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Pizzeria Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/2206"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Visible Buildings Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/3304"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Range Interval Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/3163"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Sum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1190"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Sum Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/3226"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1734"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/3356"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Increasing Array Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/2416"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Movie Festival Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1664"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Forest Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1739"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Range Updates and Sums",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1735"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Polynomial Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1736"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Range Queries and Copies",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/1737"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Missing Coin Sum Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum",
+      "segment-tree",
+      "range-queries"
+    ],
+    "url": "https://cses.fi/problemset/task/2184"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subordinates",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1674"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Matching",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1130"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Diameter",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1131"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Distances I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1132"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Distances II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1133"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Company Queries I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1687"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Company Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1688"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distance Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1135"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Paths",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1136"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subtree Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1137"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Path Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1138"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Path Queries II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2134"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Colors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1139"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Finding a Centroid",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2079"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Fixed-Length Paths I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2080"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Fixed-Length Paths II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "tree-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2081"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Josephus Queries",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2164"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Exponentiation",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1095"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Exponentiation II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1712"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Divisors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1713"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Common Divisors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1081"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Divisors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1082"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Divisor Analysis",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2182"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Prime Multiples",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2185"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Coprime Pairs",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2417"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Next Prime",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3396"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Binomial Coefficients",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1079"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Creating Strings II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1715"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distributing Apples",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1716"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Christmas Party",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1717"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permutation Order",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3397"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permutation Rounds",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3398"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bracket Sequences I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2064"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bracket Sequences II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2187"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Necklaces",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2209"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Grids",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2210"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Fibonacci Numbers",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1722"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Throwing Dice",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1096"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Graph Paths I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1723"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Graph Paths II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1724"
+  },
+  {
+    "leetcodeId": null,
+    "title": "System of Linear Equations",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3154"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Four Squares",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3355"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Triangle Number Sums",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/3406"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dice Probability",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1725"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Moving Robots",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1726"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Candy Lottery",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1727"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Inversion Probability",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1728"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stick Game",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1729"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nim Game I",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1730"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nim Game II",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1098"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stair Game",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/1099"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grundy's Game",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2207"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Another Game",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "math",
+      "mathematics"
+    ],
+    "url": "https://cses.fi/problemset/task/2208"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Word Combinations",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1731"
+  },
+  {
+    "leetcodeId": null,
+    "title": "String Matching",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1753"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Finding Borders",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1732"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Finding Periods",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1733"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimal Rotation",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1110"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest Palindrome",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1111"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Palindromes",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/3138"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Required Substring",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1112"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Palindrome Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2420"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Finding Patterns",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2102"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Patterns",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2103"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Pattern Positions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2104"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Substrings",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2105"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Repeating Substring",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2106"
+  },
+  {
+    "leetcodeId": null,
+    "title": "String Functions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2107"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Inverse Suffix Array",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/3225"
+  },
+  {
+    "leetcodeId": null,
+    "title": "String Transform",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/1113"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Substring Order I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2108"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Substring Order II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2109"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Substring Distribution",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "string",
+      "string-algorithms"
+    ],
+    "url": "https://cses.fi/problemset/task/2110"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Point Location Test",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2189"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Line Segment Intersection",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2190"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Polygon Area",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2191"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Point in Polygon",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2192"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Polygon Lattice Points",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2193"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Euclidean Distance",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2194"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Convex Hull",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/2195"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Manhattan Distances",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3410"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Manhattan Distances",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3411"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Intersection Points",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/1740"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Line Segments Trace I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3427"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Line Segments Trace II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3428"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Lines and Queries I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3429"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Lines and Queries II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/3430"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Area of Rectangles",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/1741"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Robot Path",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "geometry",
+      "geometry"
+    ],
+    "url": "https://cses.fi/problemset/task/1742"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Meet in the Middle",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/1628"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hamming Distance",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2136"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Corner Subgrid Check",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/3360"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Corner Subgrid Count",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2137"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reachable Nodes",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2138"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reachability Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2143"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Cut and Paste",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2072"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Substring Reversals",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2073"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reversals and Sums",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2074"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Necessary Roads",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2076"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Necessary Cities",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2077"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Eulerian Subgraphs",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2078"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Monster Game I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2084"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Monster Game II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2085"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Squares",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2086"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Houses and Schools",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2087"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Knuth Division",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2088"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Apples and Bananas",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2111"
+  },
+  {
+    "leetcodeId": null,
+    "title": "One Bit Positions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2112"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Signal Processing",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2113"
+  },
+  {
+    "leetcodeId": null,
+    "title": "New Roads Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2101"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dynamic Connectivity",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2133"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Parcel Delivery",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2121"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Task Assignment",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2129"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Routes II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "advanced",
+      "bit-manipulation",
+      "advanced-techniques"
+    ],
+    "url": "https://cses.fi/problemset/task/2130"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Sum",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3220"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Minimum",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3221"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Xor",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3426"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Or",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3405"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Distinct Values",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3222"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Mode",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3224"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Mex",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3219"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Median",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1076"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Cost",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1077"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Inversions",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3223"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sliding Window Advertisement",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "sliding-window-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3227"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hidden Integer",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3112"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hidden Permutation",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3139"
+  },
+  {
+    "leetcodeId": null,
+    "title": "K-th Highest Score",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3305"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permuted Binary Strings",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3228"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Colored Chairs",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3273"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Inversion Sorting",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "interactive",
+      "interactive-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3140"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Xor Subarray",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/1655"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Xor Subset",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3191"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Subset Xors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3211"
+  },
+  {
+    "leetcodeId": null,
+    "title": "K Subset Xors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3192"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Subarray Xors",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3233"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Xor Pyramid Peak",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/2419"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Xor Pyramid Diagonal",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3194"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Xor Pyramid Row",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3195"
+  },
+  {
+    "leetcodeId": null,
+    "title": "SOS Bit Problem",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/1654"
+  },
+  {
+    "leetcodeId": null,
+    "title": "And Subset Count",
+    "source": "CSES",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "bitwise-operations"
+    ],
+    "url": "https://cses.fi/problemset/task/3141"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Inverse Inversions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2214"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Monotone Subsequences",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2215"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Third Permutation",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3422"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permutation Prime Sums",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3423"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Chess Tournament",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1697"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Sums Grid",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3424"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Filling Trominos",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2423"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Path Construction",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "constructive",
+      "construction-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2418"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nearest Shops",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3303"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Prüfer Code",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1134"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Traversals",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1702"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Acyclic Graph Edges",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1756"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Strongly Connected Edges",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2177"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Even Outdegree Edges",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2179"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Graph Girth",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1707"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Fixed Length Walk Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3357"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Transfer Speeds Sum",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3111"
+  },
+  {
+    "leetcodeId": null,
+    "title": "MST Edge Check",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3407"
+  },
+  {
+    "leetcodeId": null,
+    "title": "MST Edge Set Check",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3408"
+  },
+  {
+    "leetcodeId": null,
+    "title": "MST Edge Cost",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3409"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Network Breakdown",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1677"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Coin Collecting I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3114"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Coin Collecting II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3149"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Isomorphism I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1700"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tree Isomorphism II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1701"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flight Route Requests",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1699"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Critical Cities",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1703"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Visiting Cities",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1203"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Graph Coloring",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3308"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bus Companies",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3158"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Split into Two Paths",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3358"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Network Renovation",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1704"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Forbidden Cities",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1705"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Creating Offices",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1752"
+  },
+  {
+    "leetcodeId": null,
+    "title": "New Flight Routes",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "advanced",
+      "advanced-graph-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1685"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Filled Subgrid Count I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3413"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Filled Subgrid Count II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3414"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Letter Subgrid Count I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3415"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Letter Subgrid Count II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3416"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Border Subgrid Count I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3417"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Border Subgrid Count II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3418"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Raab Game II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3400"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Empty String",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1080"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permutation Inversions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2229"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Bishops",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2176"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Sequences",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2228"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Paths II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1078"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Permutations",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/1075"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Completion",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2429"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting Reorders",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2421"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Tournament Graph Distribution",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3232"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Collecting Numbers Distribution",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/3157"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Functional Graph Distribution",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "combinatorics",
+      "math",
+      "counting-problems"
+    ],
+    "url": "https://cses.fi/problemset/task/2415"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Shortest Subsequence",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1087"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Sum",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3150"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Distinct Values Splits",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3190"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Swap Game",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1670"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Beautiful Permutation II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3175"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Multiplication Table",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/2422"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bubble Sort Rounds I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3151"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bubble Sort Rounds II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3152"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nearest Campsites I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3306"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Nearest Campsites II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3307"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Advertisement",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1142"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Special Substrings",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/2186"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Counting LCM Arrays",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3169"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Square Subsets",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3193"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarray Sum Constraints",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3294"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Water Containers Moves",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3213"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Water Containers Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3214"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stack Weights",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/2425"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Average Subarrays",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3301"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subsets with Fixed Average",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3302"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Array Average",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3361"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Pyramid Array",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1747"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Permutation Subsequence",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/3404"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bit Inversions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1188"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Writing Numbers",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1086"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Letter Pair Move Game",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/2427"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Building I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1147"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sorting Methods",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1162"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Cyclic Array",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/1191"
+  },
+  {
+    "leetcodeId": null,
+    "title": "List of Sums",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-i"
+    ],
+    "url": "https://cses.fi/problemset/task/2414"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bouncing Ball Steps",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3215"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bouncing Ball Cycle",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3216"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Knight Moves Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3218"
+  },
+  {
+    "leetcodeId": null,
+    "title": "K Subset Sums I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3108"
+  },
+  {
+    "leetcodeId": null,
+    "title": "K Subset Sums II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3109"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Increasing Array II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2132"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Food Division",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1189"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Swap Round Sorting",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1698"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Binary Subsequences",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2430"
+  },
+  {
+    "leetcodeId": null,
+    "title": "School Excursion",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1706"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Grid",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1709"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Coloring II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3312"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Programmers and Artists",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2426"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Removing Digits II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2174"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Arrangement",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2180"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Replace with Difference",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3159"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Puzzle I",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2432"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Puzzle II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2131"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bit Substrings",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2115"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reversal Sorting",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2075"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Book Shop II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1159"
+  },
+  {
+    "leetcodeId": null,
+    "title": "GCD Subsets",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3161"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Cost Pairs",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3402"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Same Sum Subsets",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3425"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Mex Grid Queries",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1157"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Building II",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1148"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stick Divisions",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1161"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stick Difference",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/3401"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coding Company",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/1665"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Stacks Sorting",
+    "source": "CSES",
+    "difficulty": "Hard",
+    "topicTags": [
+      "misc",
+      "additional-problems-ii"
+    ],
+    "url": "https://cses.fi/problemset/task/2402"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Second Largest Element in an Array",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array"
+    ],
+    "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Move Zeros to End",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/move-zeroes/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find the Missing Number",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "math",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/missing-number/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find the Number that Appears Once",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/single-number/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Consecutive Ones",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array"
+    ],
+    "url": "https://leetcode.com/problems/max-consecutive-ones/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sort an Array of 0s, 1s and 2s",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/sort-colors/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Kadane's Algorithm - Maximum Subarray Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stock Buy and Sell",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Rearrange Array Elements by Sign",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array"
+    ],
+    "url": "https://leetcode.com/problems/rearrange-array-elements-by-sign/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Next Permutation",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/next-permutation/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest Consecutive Sequence in an Array",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Set Matrix Zeros",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Rotate Matrix by 90 Degrees",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/rotate-image/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Print the Matrix in Spiral Manner",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/spiral-matrix/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Subarrays with Given Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "prefix-sum"
+    ],
+    "url": "https://leetcode.com/problems/subarray-sum-equals-k/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Pascal's Triangle",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/pascals-triangle/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Majority Element (>n/2 times)",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "array"
+    ],
+    "url": "https://leetcode.com/problems/majority-element/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Majority Element II (>n/3 times)",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array"
+    ],
+    "url": "https://leetcode.com/problems/majority-element-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "3-Sum Problem",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/3sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "4-Sum Problem",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "two-pointer",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/4sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Merge Overlapping Subintervals",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "array",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/merge-intervals/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reverse Pairs",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "array",
+      "merge-sort"
+    ],
+    "url": "https://leetcode.com/problems/reverse-pairs/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find Square Root of a Number",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/sqrtx/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Capacity to Ship Packages Within D Days",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Split Array - Largest Minimized Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/split-array-largest-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimize Max Distance to Gas Station",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/minimize-max-distance-to-gas-station/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find Peak Element",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/find-peak-element/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Search in Rotated Sorted Array II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Search in a 2D Matrix II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "binary-search",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/search-a-2d-matrix-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find the Peak Element in a 2D Matrix",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "binary-search",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/find-a-peak-element-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reverse Words in a String",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Largest Odd Number in String",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/largest-odd-number-in-string/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest Common Prefix",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/longest-common-prefix/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Isomorphic Strings",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/isomorphic-strings/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check Whether One String is a Rotation of Another",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/rotate-string/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check if Two Strings are Anagrams",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/valid-anagram/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sort Characters by Frequency",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string",
+      "hash-table",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/sort-characters-by-frequency/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Nesting Depth of Parentheses",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "stack"
+    ],
+    "url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Roman Number to Integer and Vice Versa",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "string",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/roman-to-integer/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Implement Atoi",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Beauty of All Substrings",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Delete Node of a Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Middle of a Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Rotate a Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/rotate-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Add Two Numbers as Linked Lists",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Detect a Cycle in Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find the Starting Point of Loop in Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/linked-list-cycle-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check if LL is Palindrome",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/palindrome-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Segregate Odd and Even Nodes in LL",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/odd-even-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Remove Nth Node from Back of LinkedList",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Delete the Middle Node of LL",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sort a Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "sorting"
+    ],
+    "url": "https://leetcode.com/problems/sort-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find Intersection Point of Y LinkedList",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "linked-list",
+      "two-pointer"
+    ],
+    "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Add 2 Numbers in LinkedList",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "linked-list",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Reverse a LinkedList in Groups of Size k",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Clone a Linked List with Random and Next Pointer",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "linked-list",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Pow(x, n)",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/powx-n/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Good Numbers",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "math"
+    ],
+    "url": "https://leetcode.com/problems/count-good-numbers/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Print all Subsequences/Power Set",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/subsets/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subset Sum I",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/subsets/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subset Sum II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/subsets-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Combination Sum III",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/combination-sum-iii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sudoku Solver",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/sudoku-solver/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Expression Add Operators",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "recursion",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/expression-add-operators/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check if a Number is a Power of 2",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/power-of-two/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count the Number of Set Bits",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/number-of-1-bits/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Divide Two Integers Without Using Multiplication/Division",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/divide-two-integers/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find the Number that Appears Odd Number of Times",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/single-number/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Power Set - Using Bit Manipulation",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation",
+      "backtracking"
+    ],
+    "url": "https://leetcode.com/problems/subsets/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Find Two Numbers Appearing Odd Number of Times",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/single-number-iii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Implement Stack Using Queue",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "stack",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/implement-stack-using-queues/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Implement Queue Using Stack",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "stack",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check Balanced Parentheses",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "stack",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Implement Min Stack",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/min-stack/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Next Greater Element",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/next-greater-element-i/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Next Greater Element II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/next-greater-element-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Subarray Minimums",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Asteroid Collision",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack"
+    ],
+    "url": "https://leetcode.com/problems/asteroid-collision/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Sum of Subarray Ranges",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Remove K Digits",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/remove-k-digits/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximal Rectangles",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "stack",
+      "dynamic-programming",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/maximal-rectangle/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Stock Span Problem",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "stack",
+      "monotonic-stack"
+    ],
+    "url": "https://leetcode.com/problems/online-stock-span/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "LFU Cache",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "design",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/lfu-cache/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Max Consecutive Ones III",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Fruit Into Baskets",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/fruit-into-baskets/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Binary Subarray with Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "prefix-sum"
+    ],
+    "url": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Number of Nice Subarrays",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/count-number-of-nice-subarrays/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Substrings Containing All Three Characters",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Points from Cards",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subarrays with K Different Integers",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "sliding-window"
+    ],
+    "url": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Window Subsequence",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "sliding-window",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/minimum-window-subsequence/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Merge M Sorted Lists",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "heap",
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Task Scheduler",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "heap",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/task-scheduler/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Hands of Straights",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "heap",
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/hand-of-straights/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Kth Largest Element in a Stream",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "heap",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "K Most Frequent Elements",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "heap",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/top-k-frequent-elements/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Assign Cookies",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/assign-cookies/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Lemonade Change",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "greedy"
+    ],
+    "url": "https://leetcode.com/problems/lemonade-change/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Valid Parenthesis Checker",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "greedy",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/valid-parenthesis-string/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Jump Game II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "greedy",
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/jump-game-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Binary Tree Preorder Traversal",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Binary Tree Postorder Traversal",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Level Order Traversal / Level Order Traversal II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Vertical Order Traversal of Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "hash-table"
+    ],
+    "url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Right/Left View of Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check for Symmetrical Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/symmetric-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "LCA in Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Width of a Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "queue"
+    ],
+    "url": "https://leetcode.com/problems/maximum-width-of-binary-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "All Nodes at Distance K in Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Total Nodes in a Complete Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "recursion"
+    ],
+    "url": "https://leetcode.com/problems/count-complete-tree-nodes/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "divide-and-conquer"
+    ],
+    "url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Serialize and Deserialize a Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "design"
+    ],
+    "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flatten Binary Tree to Linked List",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "linked-list"
+    ],
+    "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Search in a Binary Search Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Insert a Given Node in BST",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Delete a Node in BST",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/delete-node-in-a-bst/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Kth Smallest/Largest Element in BST",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Check if a Tree is a BST or BT",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/validate-binary-search-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "LCA in Binary Search Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Construct a BST from a Preorder Traversal",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Inorder Successor/Predecessor in BST",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/inorder-successor-in-bst/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Two Sum in BST - Check if There Exists a Pair",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Recover BST",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/recover-binary-search-tree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Largest BST in Binary Tree",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trees",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/largest-bst-subtree/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Flood Fill Algorithm",
+    "source": "Striver A2Z",
+    "difficulty": "Easy",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/flood-fill/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Detect Cycle in a Directed Graph",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/course-schedule/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Topological Sort - BFS/DFS",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/course-schedule-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bipartite Graph BFS/DFS",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Provinces",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/number-of-provinces/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Distinct Islands",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/number-of-distinct-islands/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Bridges in Graph",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/critical-connections-in-a-network/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Word Ladder I",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/word-ladder/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Word Ladder II",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/word-ladder-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Ways to Arrive at Destination",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Operations to Make Network Connected",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Most Stones Removed with Same Row or Column",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Making a Large Island",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs",
+      "union-find"
+    ],
+    "url": "https://leetcode.com/problems/making-a-large-island/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Word Ladder - Shortest Path",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/word-ladder/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Path with Minimum Effort",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "binary-search"
+    ],
+    "url": "https://leetcode.com/problems/path-with-minimum-effort/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Dijkstra's Algorithm",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs",
+      "heap"
+    ],
+    "url": "https://leetcode.com/problems/network-delay-time/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Shortest Distance in a Binary Maze",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "graphs"
+    ],
+    "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest String with All Prefixes",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trie"
+    ],
+    "url": "https://leetcode.com/problems/longest-word-with-all-prefixes/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum XOR of Two Numbers in an Array",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "trie",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum XOR With an Element from Array",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "trie",
+      "bit-manipulation"
+    ],
+    "url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Sum of Non-Adjacent Elements / House Robber",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/house-robber/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "House Robber II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/house-robber-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Unique Paths",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/unique-paths/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Grid Unique Paths II with Obstacles",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/unique-paths-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Path Sum in a Grid",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/minimum-path-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Triangle - Fixed Starting Point Path Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/triangle/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum/Maximum Falling Path Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/minimum-falling-path-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "3D DP - Cherry Pickup II",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/cherry-pickup-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Subset Sum Equal to Target",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Partitions with Given Difference",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/target-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Coins - Unbounded Knapsack",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/coin-change/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Coin Change - Number of Ways",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/coin-change-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest Palindromic Subsequence",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Insertions to Make String Palindrome",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Insertions/Deletions to Convert String A to B",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Shortest Common Supersequence",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/shortest-common-supersequence/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Wildcard Matching",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming",
+      "string"
+    ],
+    "url": "https://leetcode.com/problems/wildcard-matching/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Best Time to Buy and Sell Stock II",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Best Time to Buy and Sell Stock III",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Best Time to Buy and Sell Stock IV",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Buy and Sell Stocks with Cooldown",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Buy and Sell Stocks with Transaction Fee",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Largest Divisible Subset",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/largest-divisible-subset/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Longest String Chain",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/longest-string-chain/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Number of Longest Increasing Subsequences",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Minimum Cost to Cut a Stick",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Palindrome Partitioning II",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/palindrome-partitioning-ii/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Partition Array for Maximum Sum",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming"
+    ],
+    "url": "https://leetcode.com/problems/partition-array-for-maximum-sum/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Maximum Rectangle Area with All 1's",
+    "source": "Striver A2Z",
+    "difficulty": "Hard",
+    "topicTags": [
+      "dynamic-programming",
+      "stack",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/maximal-rectangle/"
+  },
+  {
+    "leetcodeId": null,
+    "title": "Count Square Submatrices with All Ones",
+    "source": "Striver A2Z",
+    "difficulty": "Medium",
+    "topicTags": [
+      "dynamic-programming",
+      "matrix"
+    ],
+    "url": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/"
+  }
+]
