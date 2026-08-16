@@ -1,112 +1,52 @@
-# Code Mentor AI — DSA Hint Assistant
+# AlgoPush — DSA Hint Assistant
 
-A Chrome Extension that provides AI-powered progressive hints for LeetCode and Codeforces problems. Uses a local Node.js backend powered by Google's Gemini 2.5 Flash.
+A serverless Chrome Extension that provides AI-powered progressive hints for LeetCode and Codeforces problems. Powered by Google's Gemini 3.5 Flash directly from your browser.
 
 ## Features
 
-- **3-Level Progressive Hints**: Nudge → Approach → Near-solution, each building on the previous
-- **Similar Problem Discovery**: Finds related problems from a curated dataset using AI topic classification
-- **Real-time Streaming**: Hints stream in via Server-Sent Events as they're generated
-- **Smart Caching**: Redis caching (optional) to avoid duplicate API calls
-- **Dark/Light Theme**: Toggle between themes in the extension popup
+- **Bring Your Own Key (BYOK)**: Connects directly to the Gemini REST API. **No backend server required.** Your API key is safely stored in `chrome.storage.local`.
+- **3-Level Progressive Hints**: Nudge → Approach → Near-solution, each building on the previous.
+- **Language Detection**: Automatically detects your programming language on LeetCode/Codeforces and tailors Level 3 code snippets to that language.
+- **Similar Problem Discovery**: Automatically finds related problems from LeetCode or Codeforces based on the current problem's algorithmic topics.
+- **Native Developer UI**: Clean, professional, flat aesthetic built for developers.
 
 ## Quick Start
 
-### 1. Backend Setup
+### 1. Load the Chrome Extension
 
-```bash
-cd server
-npm install
-```
+1. Clone or download this repository.
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable **Developer mode** in the top right.
+4. Click **Load unpacked** and select the root folder.
 
 ### 2. Configure API Key
 
-```bash
-copy .env.example .env
-```
+1. Get a free API key at [Google AI Studio](https://aistudio.google.com/apikey).
+2. Click the **AlgoPush** extension icon in your browser.
+3. Go to the **Settings** tab.
+4. Paste your API key and click **Save**. 
+5. Click **Test Key** to ensure your connection is successful.
 
-Edit `.env` and set your Gemini API key:
-```
-GEMINI_API_KEY=your_key_here
-```
+### 3. Use It
 
-Get a key at [Google AI Studio](https://aistudio.google.com/apikey).
+1. Navigate to any [LeetCode](https://leetcode.com/problems/) or [Codeforces](https://codeforces.com/problemset/) problem.
+2. Click the AlgoPush extension icon.
+3. Click **Get Hint** for a Level 1 nudge.
+4. Click **Next Hint** for progressively detailed explanations.
+5. Click **Similar** to find related practice problems.
 
-> **Note**: Postgres and Redis are **optional**. The app works fully without them — hints, similar problems, and topic classification all work standalone.
+## Architecture & Privacy
 
-### 3. Start the Backend
-
-```bash
-npm run dev
-```
-
-The server starts on `http://localhost:3001`.
-
-### 4. Load the Chrome Extension
-
-1. Open `chrome://extensions/`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select the `DSA_extension` project root folder
-
-### 5. Use It
-
-1. Navigate to any LeetCode or Codeforces problem
-2. Click the extension icon
-3. Click **Get Hint** for a Level 1 nudge
-4. Click **Level 2** / **Level 3** for progressively detailed hints
-5. Click **Similar** to find related practice problems
-
-## Environment Variables
-
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `GEMINI_API_KEY` | ✅ Yes | — | Google AI Studio API key |
-| `GEMINI_MODEL` | No | `gemini-2.5-flash` | Gemini model for hints & classification |
-| `EMBEDDING_MODEL` | No | `text-embedding-004` | Model for embeddings (only used by ingestion script) |
-| `DATABASE_URL` | No | — | Postgres URL (enables hint history persistence) |
-| `REDIS_URL` | No | `redis://localhost:6379` | Redis URL (enables response caching) |
-| `PORT` | No | `3001` | Server port |
-
-## Architecture
-
-```
-Chrome Extension (popup.js)
-    │
-    ├── GET  /api/health   → Health check
-    ├── POST /api/hint     → Stream/generate hints (SSE)
-    ├── POST /api/similar  → Find similar problems
-    └── GET  /api/history  → Hint history
-    │
-Backend (Node.js / Express / TypeScript)
-    │
-    ├── services/gemini.ts    → @google/genai SDK wrapper
-    ├── services/aiGuard.ts   → Retry/quota error handling
-    ├── services/cache.ts     → Redis caching (optional)
-    ├── services/classifier.ts → Topic classification
-    └── data/leetcode-problems.json → Curated problem dataset
-```
-
-## SDK
-
-This project uses the **official `@google/genai` SDK** (not the deprecated `@google/generative-ai` package).
+AlgoPush runs a **100% frontend-only architecture**. 
+There is no middleman backend or proxy server. When you request a hint, the extension makes a direct `fetch()` call to `https://generativelanguage.googleapis.com` using your locally stored API key. Your code, problem data, and API key never touch a 3rd-party server.
 
 ## Project Structure
 
 ```
-DSA_extension/
+DSA_extension-main/
 ├── manifest.json          # Chrome extension manifest v3
-├── popup.html/css/js      # Extension UI
-├── content.js             # Problem scraper (LeetCode, Codeforces)
+├── popup.html/css/js      # Extension UI & Gemini API interaction logic
+├── content.js             # Problem scraper (LeetCode, Codeforces language detection)
 ├── background.js          # Service worker
-└── server/
-    ├── src/
-    │   ├── app.ts         # Express setup
-    │   ├── index.ts       # Server entry point
-    │   ├── config.ts      # Environment config
-    │   ├── routes/        # API route handlers
-    │   ├── services/      # Gemini, caching, classification
-    │   └── middleware/     # Validation, rate limiting, errors
-    ├── data/              # Problem dataset
-    └── scripts/           # Ingestion script (optional)
+└── marked.min.js          # Lightweight markdown renderer
 ```
