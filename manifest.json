@@ -2,11 +2,13 @@
   "manifest_version": 3,
   "name": "AlgoPush",
   "version": "1.0",
-  "description": "AI-powered DSA hints for LeetCode & Codeforces — BYOK",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "description": "AI-powered DSA hints for LeetCode, Codeforces, HackerRank & CodeChef — BYOK",
+  "permissions": ["activeTab", "storage"],
   "host_permissions": [
-    "https://leetcode.com/*", 
+    "https://leetcode.com/*",
     "https://codeforces.com/*",
+    "https://www.hackerrank.com/*",
+    "https://www.codechef.com/*",
     "https://generativelanguage.googleapis.com/*"
   ],
   "action": {
@@ -19,12 +21,16 @@
         "https://leetcode.com/problems/*",
         "https://codeforces.com/problemset/problem/*",
         "https://codeforces.com/contest/*/problem/*",
-        "https://codeforces.com/gym/*/problem/*"
+        "https://codeforces.com/gym/*/problem/*",
+        "https://www.hackerrank.com/challenges/*",
+        "https://www.hackerrank.com/contests/*/challenges/*",
+        "https://www.codechef.com/problems/*",
+        "https://www.codechef.com/*/problems/*"
       ],
       "js": ["content.js"]
     }
   ],
-  "background": { 
-    "service_worker": "background.js" 
+  "background": {
+    "service_worker": "background.js"
   }
 }

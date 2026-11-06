@@ -1,0 +1,10 @@
+{
+  "name": "algopush",
+  "version": "1.0.0",
+  "description": "AI-powered DSA hints for LeetCode, Codeforces, HackerRank & CodeChef — BYOK Chrome Extension",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/**/*.test.js",
+    "check": "node --check popup.js content.js background.js && node -e \"JSON.parse(require('fs').readFileSync('manifest.json'))\""
+  }
+}

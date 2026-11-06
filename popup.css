@@ -123,6 +123,42 @@ html[data-platform="codeforces"][data-theme="dark"] {
   --surface-raised: #1f2740;
 }
 
+/* ─── HackerRank Platform Theme ─── */
+html[data-platform="hackerrank"] {
+  --accent:        #00ea64;
+  --accent-dim:    rgba(0, 234, 100, 0.12);
+  --accent-glow:   rgba(0, 234, 100, 0.28);
+  --accent-text:   #00ea64;
+  --border-accent: rgba(0, 234, 100, 0.35);
+}
+
+html[data-platform="hackerrank"][data-theme="dark"] {
+  --bg:          #0b130e;
+  --bg-subtle:   #101b14;
+  --surface:     #15241b;
+  --surface-card: #15241b;
+  --surface-hover: #1b2d22;
+  --surface-raised: #21372a;
+}
+
+/* ─── CodeChef Platform Theme ─── */
+html[data-platform="codechef"] {
+  --accent:        #d97706;
+  --accent-dim:    rgba(217, 119, 6, 0.12);
+  --accent-glow:   rgba(217, 119, 6, 0.28);
+  --accent-text:   #f59e0b;
+  --border-accent: rgba(217, 119, 6, 0.35);
+}
+
+html[data-platform="codechef"][data-theme="dark"] {
+  --bg:          #15110d;
+  --bg-subtle:   #1c1611;
+  --surface:     #241d16;
+  --surface-card: #241d16;
+  --surface-hover: #2e251c;
+  --surface-raised: #382d22;
+}
+
 /* ─── Body ─── */
 body {
   width: 400px;
@@ -216,6 +252,7 @@ header p {
   transition: all 0.3s ease;
 }
 
+.status-dot.active,
 .status-dot.on-leetcode {
   background: var(--green);
   box-shadow: 0 0 8px var(--green);
@@ -877,14 +914,6 @@ main {
   display: none;
 }
 
-/* ─── Request Counter ─── */
-.request-counter {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  color: var(--text-faint);
-  text-align: center;
-  padding: 4px 0 2px;
-}
 
 /* ─── Animations ─── */
 @keyframes fadeIn {

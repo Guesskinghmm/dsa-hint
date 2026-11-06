@@ -32,6 +32,7 @@
   <main>
     <div class="tabs">
       <div class="tab active" data-tab="hints">Hints</div>
+      <div class="tab" data-tab="history">History</div>
       <div class="tab" data-tab="settings">Settings</div>
     </div>
 
@@ -41,7 +42,6 @@
       <div class="card" id="problem-card">
         <div id="problem-title">
           <span id="problem-title-text">Loading…</span>
-          <!-- Platform logo injected here by popup.js -->
           <span class="platform-logo" id="problem-platform"></span>
         </div>
         <div id="problem-desc"></div>
@@ -50,7 +50,7 @@
       <div class="card" id="no-problem">
         <div class="big" style="font-size:24px; margin-bottom:8px;">[  ]</div>
         <strong>No problem detected</strong>
-        <span>Open a LeetCode or Codeforces problem page, then click the extension.</span>
+        <span>Open a LeetCode, Codeforces, HackerRank, or CodeChef problem page, then click the extension.</span>
       </div>
 
       <!-- Hint level progress -->
@@ -95,11 +95,29 @@
         Click "Similar" to find related problems for practice.
       </div>
 
-      <div class="request-counter" id="request-counter" style="display:none"></div>
-
     </div>
 
-
+    <!-- HISTORY TAB -->
+    <div class="tab-panel" id="tab-history">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+        <span class="section-label" style="margin:0;">Recent Hints</span>
+        <button id="clear-history-btn" class="save-btn" style="padding:4px 8px; font-size:10px; background:var(--surface-raised); border:1px solid var(--border); color:var(--text-muted);">Clear</button>
+      </div>
+      <div class="table-wrapper">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Problem</th>
+              <th>Lvl</th>
+              <th>Snippet</th>
+            </tr>
+          </thead>
+          <tbody id="history-container"></tbody>
+        </table>
+      </div>
+      <div id="history-empty" class="empty-state">No saved hints yet. Unlocked hints will appear here.</div>
+    </div>
 
     <!-- SETTINGS TAB -->
     <div class="tab-panel" id="tab-settings">
@@ -127,10 +145,12 @@
       <div class="card settings-card">
         <div class="section-label">About</div>
         <div style="color:var(--text-muted); line-height:1.6; font-size:11px;">
-          Works on <span style="color:var(--accent-text); font-weight:600;">leetcode.com/problems/*</span> and
-          <span style="color:var(--accent-text); font-weight:600;">codeforces.com/problemset/*</span>.<br><br>
-          Powered by <strong style="color:var(--text)">Gemini 3.5 Flash</strong>.<br>
-          Your API key stays on your device only.
+          Works on <span style="color:var(--accent-text); font-weight:600;">LeetCode</span>,
+          <span style="color:var(--accent-text); font-weight:600;">Codeforces</span>,
+          <span style="color:var(--accent-text); font-weight:600;">HackerRank</span>, and
+          <span style="color:var(--accent-text); font-weight:600;">CodeChef</span> problem pages.<br><br>
+          Powered by <strong style="color:var(--text)">Google Gemini API</strong>.<br>
+          Your API key stays stored locally on your device.
         </div>
       </div>
     </div>
